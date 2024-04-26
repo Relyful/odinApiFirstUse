@@ -5,16 +5,14 @@
   <title>Api fun</title>
 </head>
 <body>
+  <form action="#">
+    <div class="formRow">
+      <input type="text" name="searchQuery" id="searchQuery">
+      <button type="submit" id="searchButt">Search GIF</button>
+    </div>
+  </form>
   <img src="#">
-  <script>
-    const img = document.querySelector('img');
-    fetch('https://api.giphy.com/v1/gifs/translate?api_key=y3p2cNuXBcPMCQCG5R8DTJNhPRetslCU&s=cats', { mode: 'cors' })
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        img.src = response.data.images.original.url;
-      });
-  </script>
+  <button id="newImage">Get a new Image</button>
+  <script src="index.js"></script>
 </body>
 </html>
